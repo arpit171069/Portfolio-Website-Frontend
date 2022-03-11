@@ -12,7 +12,7 @@ csp += `img-src 'self' data: blob:;`;
 csp += `font-src 'self' https://fonts.gstatic.com;`;
 csp += `frame-src *;`;
 csp += `media-src *;`;
-csp += `connect-src https://vitals.vercel-insights.com https://portfolio-website-steel-gamma.vercel.app;`;
+csp += `connect-src https://vitals.vercel-insights.com https://portfolio-website-arpit.vercel.app;`;
 
 let referrer = "strict-origin";
 
