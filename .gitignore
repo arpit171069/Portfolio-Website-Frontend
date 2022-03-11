@@ -76,7 +76,7 @@ typings/
 .cache
 
 # Next.js build output
-.next
+build/
 
 # Nuxt.js build / generate output
 .nuxt

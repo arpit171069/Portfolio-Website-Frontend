@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.usericon::before {
+  background-image: linear-gradient(to bottom, #e0f2fe, #38bdf8);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 0.5rem);
+  height: calc(100% + 0.5rem);
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.usericon:hover::before,
+.usericon[aria-expanded="true"]::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.primary-btn {
+  transform: scale(1);
+  transition: all 200ms ease-in-out;
+}
+
+.primary-btn:hover {
+  transform: scale(1.1);
+}
+
+.primary-btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 0.5rem);
+  height: calc(100% + 0.5rem);
+  border-radius: 0.5rem;
+  background: linear-gradient(
+      45deg,
+      #1c7fee 0%,
+      #5f15f2 25%,
+      #ba0cf8 50%,
+      #5f15f2 75%,
+      #1c7fee 100%
+    )
+    repeat 0% 0% / 300% 100%;
+  inset: -3px;
+  filter: blur(3px) opacity(0.8);
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
