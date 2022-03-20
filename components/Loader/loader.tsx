@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { NextPage } from 'next';
 import { useNProgress } from '@tanem/react-nprogress';
-import lottie from 'lottie-web';
+import lottie from 'lottie-web/build/player/lottie_light';
 import loadingJson from '../../public/loading.json';
 import { Bar } from './Bar';
 

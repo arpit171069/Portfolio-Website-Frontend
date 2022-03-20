@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import lottie from 'lottie-web';
+import lottie from 'lottie-web/build/player/lottie_light';
 import { useEffect, useRef } from 'react';
 import spinnerJSON from '../../public/spinner.json';
 

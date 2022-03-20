@@ -12,7 +12,7 @@ csp += `img-src 'self' data: blob:;`;
 csp += `font-src 'self' https://fonts.gstatic.com;`;
 csp += `frame-src *;`;
 csp += `media-src *;`;
-csp += `connect-src https://vitals.vercel-insights.com https://portfolio-website-arpit.vercel.app;`;
+csp += `connect-src https://vitals.vercel-insights.com https://portfolio-website-arpit.vercel.app http://localhost:3000;`;
 
 let referrer = "strict-origin";
 
@@ -23,6 +23,10 @@ export default class Document extends NextDocument {
                 <Head>
                     <meta httpEquiv="Content-Security-Policy" content={csp} />
                     <meta name="referrer" content={referrer} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content="https://portfolio-website-arpit.vercel.app/" />
+                    <meta property="og:image" content="https://res.cloudinary.com/arpit-portfolio-cloudinary/image/upload/v1646053154/Arpit_verma_1024_960_px_150_150_px_rlvbn0.png" />
+                    <meta name="twitter:card" content="summary_large_image" />
                 </Head>
                 <body>
                     <Main />

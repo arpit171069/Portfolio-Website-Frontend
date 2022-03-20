@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import lottie from 'lottie-web';
+import lottie from 'lottie-web/build/player/lottie_light';
 import wipJson from '../public/workinprogress.json';
 import { WorkInProgress } from '../components';
 import { useEffect, useRef } from 'react';
@@ -27,6 +27,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Arpit Verma</title>
         <meta name="description" content="Arpit Verma Portfolio Website Home Page" />
+        <meta property="og:title" content="Arpit Verma Portfolio Website" />
+        <meta property="og:description" content="Welcome to Arpit Verma's Portfolio Website." />
+        <meta property="og:site_name" content="Arpit Verma Portfolio Website | Home Page" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
