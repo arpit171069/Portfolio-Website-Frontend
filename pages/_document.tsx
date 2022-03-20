@@ -25,8 +25,9 @@ export default class Document extends NextDocument {
                     <meta name="referrer" content={referrer} />
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content="https://portfolio-website-arpit.vercel.app/" />
-                    <meta property="og:image" content="https://res.cloudinary.com/arpit-portfolio-cloudinary/image/upload/v1646053154/Arpit_verma_1024_960_px_150_150_px_rlvbn0.png" />
+                    <meta property="og:image" content="https://res.cloudinary.com/arpit-portfolio-cloudinary/image/upload/v1647809068/og-img_yixclp.png" />
                     <meta name="twitter:card" content="summary_large_image" />
+                    <meta property="og:image:type" content="image/png" />
                 </Head>
                 <body>
                     <Main />
